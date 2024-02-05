@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<title>Gym Landing page (Practice)</title>
+
+<style>
+    /* targeting with element tag  */
+    body {
+        /* CSS RESETING OF BODY */
+        font-family: 'Roboto Condensed', sans-serif;
+        height: 1250px;
+        margin: 0px;
+        padding: 0px;
+        background-image: url("static/bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* targeting with class  */
+    /* .header { */
+    /* border: 2px solid yellow; */
+    /* } */
+
+    /* for head elements i.e I have targeted logo,navbar and right all at once with with class*/
+    .headelem {
+        /* border: 2px solid red; */
+        display: inline-block;
+        /*taaki teeno ek hi line me aajaaye */
+    }
+
+    /* targeting left , mid and right with their id's */
+    #left {
+        /* LOGO */
+
+        /* absolute means with respect to the parent element that is header tag*/
+        position: absolute;
+        left: 60px;
+        top: 26px;
+
+    }
+
+    #left img {
+        width: 95px;
+        
+        transition-property: all;
+        transition-duration: 0.2s;
+
+    }
+
+    #left img:hover {
+        /* opacity: 70%; */
+        transform: scale(1.1);
+    }
+
+    #mid {
+        /*NAVBAR*/
+
+        /* overriding the display inline block  */
+        display: block;
+        width: 30%;
+        /* auto centers the navbar  */
+        margin: 59px auto;
+        /* margin y , x    (auto centers the element in x axis ) */
+
+    }
+
+    #right {
+        /* SIGNIN */
+
+        position: absolute;
+        right: 60px;
+        top: 57px;
+    }
+
+    #mid li {
+        display: inline-block;
+        
+    }
+
+    #mid a {
+        color: white;
+        font-size: 19px;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 20px;
+
+        
+        transition-property: all;
+        transition-duration: 0.2s;
+    }
+
+    #mid a:hover {
+        color: #ffe347;
+        font-size: 25px;
+    }
+
+
+    .btn {
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 8px;
+        width: 113px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        opacity: 70%;
+    }
+
+    #find {
+        background-color: #ffe347;
+    }
+
+    #memberships {
+        background-color: black;
+        color: white;
+    }
+
+    .join-now {
+        display: block;
+        width: 29%;
+        position: absolute;
+        top: 93%;
+        left: 34%;
+    }
+
+    #joinbutton {
+        background-color: rgb(255, 27, 27);
+        color: white;
+        display: block;
+        position: absolute;
+        top: 159%;
+        left: 44%;
+        
+    }
+
+    
+</style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="headelem" id="left">
+            <a href="#"><img src="static/Golds_Gym_logo_logotype.png" alt=""></a>
+        </div>
+        <div class="headelem" id="mid">
+            <ul>
+                <li><a href="#">Join Now</a></li>
+                <li><a href="#">Free Pass</a></li>
+                <li><a href="#">Shop Gear</a></li>
+            </ul>
+        </div>
+        <div class="headelem" id="right">
+            <button class="btn" id="find">FIND A GYM</button>
+            <button class="btn" id="memberships">MEMBERSHIPS</button>
+        </div>
+    </header>
+
+    <img src="static/Save-Big-Join-for-1-dollar-now-1.png" class="join-now">
+
+    <button class="btn" id="joinbutton">JOIN NOW</button>
+</body>
+
+</html>
